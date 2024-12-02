@@ -1,0 +1,16 @@
+.root {
+  width: 64px;
+  height: 64px;
+  background: tomato;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.root svg{
+    stroke: white;
+}

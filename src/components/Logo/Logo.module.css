@@ -1,0 +1,65 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  color: white;
+  width: 256px;
+  box-sizing: border-box;
+}
+
+
+.logo{
+  position: relative;
+}
+
+.logo img{
+  width: 100%;
+  position: relative;   
+  z-index: 10;
+  border-radius: 16px;
+}
+
+.innerWave{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  border-radius: 16px;
+  transform: scale(1.2);
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+.title{
+  font-size: 24px;
+  text-align: center;
+}
+
+.description{
+  font-size: 18px;
+  text-align: center;
+}
+
+@keyframes wave {
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  40%{
+    background: #8c7ae6;
+
+  }
+  80%{
+    background: #e84118;
+  }
+  100%{
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
