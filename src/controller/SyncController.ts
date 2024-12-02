@@ -8,7 +8,7 @@ export class SyncController {
   connect = () => {
     const audio = document.createElement("audio");
 
-    this.socket = new WebSocket("ws://asmund-fm-sync.deno.dev/");
+    this.socket = new WebSocket("wss://asmund-fm-sync.deno.dev/");
 
     console.log(this.socket);
 
