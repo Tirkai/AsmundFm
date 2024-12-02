@@ -25,6 +25,8 @@ export class SyncController {
 
       if (data.eventType === "onClientSyncPlay") {
 
+        console.log(data)
+
         audio.pause();
         audio.src = data.payload.trackUrl;
         audio.play();
